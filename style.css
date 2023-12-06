@@ -53,12 +53,12 @@ ul
 /* MENU OPTIONS */
 .menu-options li
 {
-    margin-right: 60px;
+    margin-right: 64px;
 }
 .menu-options
 {
     display: flex;
-    margin-left: 60px;
+    margin-left: 64px;
 }
 
 /* RIGHT MENU */
@@ -68,7 +68,7 @@ ul
 }
 .right-menu .search
 {
-    margin-right: 60px;
+    margin-right: 64px;
 }
 
 .main-menu .mobile-menu
@@ -80,6 +80,16 @@ ul
 img.icons
 {
     width: 20px;
+}
+
+.header-banner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(85, 85, 85);
+    padding: 10px 30px;
+    text-align: center;
 }
 
 /* 1100px QEURY */
