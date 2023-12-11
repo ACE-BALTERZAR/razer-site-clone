@@ -23,7 +23,7 @@
 body
 {
     font-family: 'Quan';
-    background: #000;
+    background: rgb(34, 34, 34);
     color: #fff;
     font-size: 20px;
     line-height: 1.2;
@@ -41,10 +41,50 @@ a:hover
 {
     text-decoration: underline;
 }
-.container
+h2
 {
-    max-width: 1300px;
-    margin: auto;
+    font-weight: 600;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+h4
+{
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* UTILITY */
+img.icons
+{
+    width: 20px;
+}
+section
+{
+    height: 700px;
+    font-family: 'Goldman-S';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 48px 0px;
+    text-align:center;
+    row-gap: 8px;
+    margin-bottom: 10px;
+}
+section a span
+{
+    font-size: 21px;
+    font-weight: 100;
+}
+section .green
+{
+    color: rgb(68, 214, 44);
+    padding: 0 3px;
+}
+section .double-links
+{
+    margin-right: 30px;
 }
 
 /* HEADER */
@@ -88,12 +128,7 @@ a:hover
     display: none;
 }
 
-/* UTILITY */
-img.icons
-{
-    width: 20px;
-}
-
+/* HEADER BANNER */
 .header-banner
 {
     display: flex;
@@ -108,37 +143,13 @@ img.icons
 /* HOLIDAY BANNER */
 .holiday-banner
 {
-    font-family: 'Goldman-S';
-    height: 700px;
     background: url('./img/15_holiday-gift-guide-campaign-homepage-large-2x.webp') no-repeat center center /cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 50px 48px 0px;
-    text-align:center;
-    row-gap: 8px;
 }
-.holiday-banner h1
+
+/* RAZER HAMMERHEAD */
+.razer-hammerhd
 {
-    font-weight: 600;
-    font-size: 56px;
-    text-transform: uppercase;
-}
-.holiday-banner h4
-{
-    font-size: 28px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-.holiday-banner a, .holiday-banner p
-{
-    font-size: 21px;
-}
-.holiday-banner p
-{
-    color: rgb(68, 214, 44);
-    font-weight: 100;
+    background: url('./img/razer-hammerhead-hyperspeed-for-meta-quest-a-desktop-2x.webp') no-repeat center center /cover;
 }
 
 /* 1100px QEURY */
@@ -153,11 +164,13 @@ img.icons
         margin-right: 40px;
     }
 
-    .holiday-banner
+    section
     {
         height: 350px;
     }
 }
+
+/* 900px QUERY */
 @media(max-width: 900px)
 {
     .menu-options
@@ -170,6 +183,7 @@ img.icons
     }
 }
 
+/* 776px QUERY */
 @media(max-width: 776px)
 {
     .main-menu
@@ -186,25 +200,32 @@ img.icons
         display: none;
     }
 
-    .holiday-banner h1
+    section h2
     {
         font-size: 32px;
     }
-    .holiday-banner h4
+    section h4
     {
         font-size: 20px;
     }
-    .holiday-banner a, .holiday-banner p
+    section a span
     {
         font-size: 15px;
     }
 }
 
+/* 500px QUERY */
 @media(max-width: 500px)
 {
     .holiday-banner
     {
         background: url('./img/31_holiday-gift-guide-campaign-homepage-mobile2x.webp') no-repeat center center /cover;
         height: 550px;
+    }
+    
+    .razer-hammerhd
+    {
+        background: url('./img/razer-hammerhead-hyperspeed-for-meta-quest-a-mobile.webp') no-repeat center center /cover;
+        height: 580px;
     }
 }
