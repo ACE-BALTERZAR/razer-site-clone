@@ -152,6 +152,33 @@ section .double-links
     background: url('./img/razer-hammerhead-hyperspeed-for-meta-quest-a-desktop-2x.webp') no-repeat center center /cover;
 }
 
+/* RAZER BLADE 16 */
+.razer-b16
+{
+    background: url('./img/14_razer-blade16-lamborghini-homepage-desktop2x.webp') no-repeat center center /cover;
+    padding-top: 25px;
+}
+.razer-b16 .exclusive-badge
+{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 2px 12px;
+    background: #ff9c07;
+    color: #000401;    
+    border: 1px solid black;
+}
+.razer-b16 .exclusive-badge span:first-child
+{
+    font-size: 10px;
+    font-weight:bold;
+}
+.razer-b16 .exclusive-badge.prime-link span:last-child
+{
+    font-size: 16px;
+    font-weight:bold;
+}
 /* 1100px QEURY */
 @media(max-width: 1100px)
 {
@@ -226,6 +253,12 @@ section .double-links
     .razer-hammerhd
     {
         background: url('./img/razer-hammerhead-hyperspeed-for-meta-quest-a-mobile.webp') no-repeat center center /cover;
+        height: 580px;
+    }
+
+    .razer-b16
+    {
+        background: url('./img/36_razer-blade16-lamborghini-homepage-mobile2x.webp') no-repeat center center /cover;
         height: 580px;
     }
 }
