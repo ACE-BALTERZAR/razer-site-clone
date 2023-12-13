@@ -86,6 +86,19 @@ section .double-links
 {
     margin-right: 30px;
 }
+.multi-section section h2
+{
+   font-size: 39px;
+}
+.multi-section section h4
+{
+    font-size: 21px;
+}
+.multi-section section a span
+{
+    font-size: 17px;
+}
+
 
 /* HEADER */
 .main-menu
@@ -179,6 +192,52 @@ section .double-links
     font-size: 16px;
     font-weight:bold;
 }
+
+/* MULTI-SECTION CONTAINER */
+.multi-section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+/* RAZER FUJIN PRO SECTION*/
+.fujin-pro
+{
+    background: url('./img/03_fujin-pro-b-950x580-desktop.webp') no-repeat center center /cover; 
+}
+
+/* RAZER B16 & 18M SECTION*/
+.r16-18m
+{
+    background: url('./img/04_mercury-blade16-blade18-b-950x580-desktop.webp') no-repeat center center /cover;
+}
+
+/* RAZER ANNVIERSARY SECTION*/
+.razer-annivsry
+{
+    background: url('./img/05_razer-gold-5th-anniversary-b-950x580-desktop.webp') no-repeat center center /cover;
+}
+
+/* iMMERSIVE LINE SECTION*/
+.rzr-immersive
+{
+    background: url('./img/immersive-campaign-b-950x580-desktop.webp') no-repeat center center /cover;
+}
+
+/* SNEKI-SNEK SECTION */
+.sneki-snek
+{
+    background: url('./img/07_sneki-snek-b-950x580-desktop.webp') no-repeat center center /cover;
+}
+
+/* GIFT CARD SECTION */
+.gift-cards
+{
+    background: url('./img/13_ebonus-card-b-950x580-desktop.webp') no-repeat center center /cover;
+}
+
+
 /* 1100px QEURY */
 @media(max-width: 1100px)
 {
@@ -227,23 +286,24 @@ section .double-links
         display: none;
     }
 
-    section h2
+    section h2, .multi-section section h2
     {
         font-size: 32px;
     }
-    section h4
+    section h4, .multi-section section h4
     {
         font-size: 20px;
     }
-    section a span
+    section a span, .multi-section section a span
     {
         font-size: 15px;
     }
-}
 
-/* 500px QUERY */
-@media(max-width: 500px)
-{
+    .multi-section
+    {
+        grid-template-columns: 1fr;
+    }
+
     .holiday-banner
     {
         background: url('./img/31_holiday-gift-guide-campaign-homepage-mobile2x.webp') no-repeat center center /cover;
@@ -260,5 +320,41 @@ section .double-links
     {
         background: url('./img/36_razer-blade16-lamborghini-homepage-mobile2x.webp') no-repeat center center /cover;
         height: 580px;
+    }
+
+    .fujin-pro
+    {
+        background: url('./img/33_fujin-pro-b-480x615-mobile.webp')  no-repeat center center /cover;
+        height: 615px;
+    }
+
+    .r16-18m
+    {
+        background: url('./img/34_razer-blade-16-and-18-mercury-b-480x615-mobile.webp')  no-repeat center center /cover;
+        height: 615px;
+    }
+
+    .razer-annivsry
+    {
+        background: url('./img/35_razer-gold-5th-anniversary-b-480x615-mobile.webp')  no-repeat center center /cover;
+        height: 615px;
+    }
+
+    .rzr-immersive
+    {
+        background: url('./img/immersive-campaign-b-480x615-mobile.webp') no-repeat center center /cover;
+        height: 615px;
+    }
+
+    .sneki-snek
+    {
+        background: url('./img/38_sneki-snek-b-480x615-mobile.webp') no-repeat center center /cover;
+        height: 615px;
+    }
+
+    .gift-cards
+    {
+        background: url('./img/37_ebonus-card-b-480x615-mobile.webp') no-repeat center center /cover;
+        height: 615px;
     }
 }
