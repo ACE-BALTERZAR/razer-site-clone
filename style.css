@@ -293,7 +293,7 @@ a.grey-link
 }
 .page-bottom hr
 {
-    width: 1214px;
+    max-width: 90%;
     margin: 0 auto;
     border-color: rgb(85, 85, 85);
     background-color: rgb(85, 85, 85);
