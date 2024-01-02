@@ -59,6 +59,10 @@ img.icons
 {
     width: 20px;
 }
+img.icons.foot-icon
+{
+    width: 28px;
+}
 section
 {
     height: 700px;
@@ -237,6 +241,88 @@ section .double-links
     background: url('./img/13_ebonus-card-b-950x580-desktop.webp') no-repeat center center /cover;
 }
 
+/* FOOTER */
+.page-bottom
+{
+    font-family: 'Goldman-s';
+    font-size: 12.25px;
+    background: rgb(17, 17, 17);
+    color: rgb(153, 153, 153);
+}
+.page-bottom .footer-container
+{
+    display: flex;
+    padding: 30px 70px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.page-bottom .footer-container ul
+{
+    margin-right: 80px;
+}
+.page-bottom .footer-container ul:last-child li
+{
+    padding: 0;
+}
+.page-bottom .footer-links
+{
+    display: flex;
+}
+.page-bottom .footer-container div
+{
+    color:rgb(68, 214, 44);
+    text-transform: uppercase;
+}
+.page-bottom .footer-links li
+{
+    padding: 0 0 16px;
+    color: rgb(153, 153, 153);
+}
+.page-bottom .footer-links li a
+{
+    color:rgb(153, 153, 153);
+}
+a.grey-link
+{    
+    color: rgb(153, 153, 153);
+}
+.page-bottom .footer-links ul li:first-child
+{
+    padding: 0 0 16px;
+    color: #fff;
+}
+.page-bottom hr
+{
+    width: 1214px;
+    margin: 0 auto;
+    border-color: rgb(85, 85, 85);
+    background-color: rgb(85, 85, 85);
+}
+.page-bottom .footer-bottom
+{
+    display: flex;
+    padding: 20px 70px;
+    justify-content: flex-start;
+}
+.page-bottom .footer-bottom span
+{
+    margin-right: 40px;
+}
+.page-bottom .footer-bottom ul
+{
+    display: flex;
+}
+.page-bottom .footer-bottom ul:last-child
+{
+    margin-left: auto;
+}
+
+.footer-quote
+{
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 15px;
+}
 
 /* 1100px QEURY */
 @media(max-width: 1100px)
@@ -253,6 +339,16 @@ section .double-links
     section
     {
         height: 350px;
+    }
+
+    .page-bottom .footer-container
+    {
+        padding: 20px 25px;
+    }
+
+    .footer-quote
+    {
+        margin-right: 0px;
     }
 }
 
