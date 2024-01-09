@@ -248,6 +248,7 @@ section .double-links
     font-size: 12.25px;
     background: rgb(17, 17, 17);
     color: rgb(153, 153, 153);
+    padding-bottom: 5px;
 }
 .page-bottom .footer-container
 {
@@ -259,6 +260,10 @@ section .double-links
 .page-bottom .footer-container ul
 {
     margin-right: 80px;
+}
+.page-bottom .footer-container ul:nth-child(4)
+{
+    margin-right: 120px;
 }
 .page-bottom .footer-container ul:last-child li
 {
@@ -291,13 +296,6 @@ a.grey-link
     padding: 0 0 16px;
     color: #fff;
 }
-.page-bottom hr
-{
-    max-width: 90%;
-    margin: 0 auto;
-    border-color: rgb(85, 85, 85);
-    background-color: rgb(85, 85, 85);
-}
 .page-bottom .footer-bottom
 {
     display: flex;
@@ -316,13 +314,26 @@ a.grey-link
 {
     margin-left: auto;
 }
-
 .footer-quote
 {
     margin-left: auto;
     margin-right: 30px;
     font-size: 15px;
 }
+
+/* FOOTER HR */
+.footer-line
+{
+    padding: 0 70px;
+}
+.page-bottom hr
+{
+    max-width: 100%;
+    margin: 0 auto;
+    border-color: rgb(85, 85, 85);
+    background-color: rgb(85, 85, 85);
+}
+
 
 /* 1100px QEURY */
 @media(max-width: 1100px)
@@ -350,6 +361,16 @@ a.grey-link
     {
         margin-right: 0px;
     }
+
+    .footer-line
+    {
+        padding: 0 25px;
+    }
+
+    .page-bottom .footer-bottom
+    {
+        padding: 20px 25px;
+    }
 }
 
 /* 900px QUERY */
@@ -362,6 +383,11 @@ a.grey-link
     .menu-options li, .right-menu .search
     {
         margin-right: 30px;
+    }
+    
+    .page-bottom .footer-links ul, .page-bottom .footer-links ul:nth-child(4)
+    {
+        margin-right: 50px;
     }
 }
 
